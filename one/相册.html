@@ -1,22 +1,47 @@
-
-
-
 <!DOCTYPE html>
+
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>1802</title>
     <style>
-        body,p,ul,dl,dd,ol,h1,h2,h3,h4,h5,h6{margin: 0;font-size: 16px;font-weight: normal;}
-        ul,ol{padding: 0;list-style: none;}
-        a{color: inherit; text-decoration: none;}
-        .soll{
+        body,
+        p,
+        ul,
+        dl,
+        dd,
+        ol,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        
+        ul,
+        ol {
+            padding: 0;
+            list-style: none;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .soll {
             position: absolute;
             top: 117px;
             left: 0;
-            right:0;
+            right: 0;
             margin: 200px auto;
             width: 1000px;
             height: 400px;
@@ -24,12 +49,14 @@
             background-color: #ccc;
             color: slateblue;
         }
-        .soll li{
+        
+        .soll li {
             height: 400px;
             float: left;
             position: relative;
         }
-        .soll li input[type='radio']{
+        
+        .soll li input[type='radio'] {
             margin: 0px;
             padding: 0px;
             display: block;
@@ -39,22 +66,28 @@
             opacity: 0;
             cursor: pointer;
         }
-        .soll li input[type='radio']:checked{
+        
+        .soll li input[type='radio']:checked {
             width: 700px;
         }
-        .soll li:nth-child(1){
-            background:url("./img/2.jpg") center/cover;
+        
+        .soll li:nth-child(1) {
+            background: url("./img/2.jpg") center/cover;
         }
-        .soll li:nth-child(2){
-            background:url("./img/3.jpg") center top/cover;
+        
+        .soll li:nth-child(2) {
+            background: url("./img/3.jpg") center top/cover;
         }
-        .soll li:nth-child(3){
-            background:url("./img/1.jpg") center/cover;
+        
+        .soll li:nth-child(3) {
+            background: url("./img/1.jpg") center/cover;
         }
-        .soll li:nth-child(4){
-            background:url("./img/4.jpg") center/cover;
+        
+        .soll li:nth-child(4) {
+            background: url("./img/4.jpg") center/cover;
         }
-        .soll li .bg{
+        
+        .soll li .bg {
             position: fixed;
             top: 0px;
             left: 0px;
@@ -65,22 +98,28 @@
             transition: 0.3s;
             filter: blur(5px);
         }
-        .soll li:nth-child(1) .bg{
-            background:palegreen url("./img/2.jpg") center/cover;
+        
+        .soll li:nth-child(1) .bg {
+            background: palegreen url("./img/2.jpg") center/cover;
         }
-        .soll li:nth-child(2) .bg{
-            background:green url("./img/2.jpg") center/cover;
+        
+        .soll li:nth-child(2) .bg {
+            background: green url("./img/2.jpg") center/cover;
         }
-        .soll li:nth-child(3) .bg{
-            background:yellow url("./img/3.jpg") center/cover3
+        
+        .soll li:nth-child(3) .bg {
+            background: yellow url("./img/3.jpg") center/cover3
         }
-        .soll li:nth-child(4) .bg{
-            background:red url("./img/4.jpg") center/cover;
+        
+        .soll li:nth-child(4) .bg {
+            background: red url("./img/4.jpg") center/cover;
         }
-        .soll li input[type="radio"]:checked+.bg{
+        
+        .soll li input[type="radio"]:checked+.bg {
             opacity: 1;
         }
-        .soll li::before{
+        
+        .soll li::before {
             content: "";
             display: block;
             position: absolute;
@@ -92,7 +131,8 @@
             opacity: .4;
             transition: .3s;
         }
-        .text{
+        
+        .text {
             position: absolute;
             top: 0px;
             right: 0px;
@@ -102,26 +142,28 @@
         }
     </style>
 </head>
-<body>
-<ul class="soll">
-    <li>
-        <input type="radio" name="radio">
-        <div class="bg"></div>
-    </li>
-    <li>
-        <input type="radio" name="radio" checked>
-        <div class="bg"></div>
-    </li>
-    <li>
-        <input type="radio" name="radio">
-        <div class="bg"></div>
-    </li>
-    <li>
-        <input type="radio" name="radio">
-        <div class="bg"></div>
-    </li>
-</ul>
 
-<!-- Code injected by live-server -->
+<body>
+    <ul class="soll">
+        <li>
+            <input type="radio" name="radio">
+            <div class="bg"></div>
+        </li>
+        <li>
+            <input type="radio" name="radio" checked>
+            <div class="bg"></div>
+        </li>
+        <li>
+            <input type="radio" name="radio">
+            <div class="bg"></div>
+        </li>
+        <li>
+            <input type="radio" name="radio">
+            <div class="bg"></div>
+        </li>
+    </ul>
+
+    <!-- Code injected by live-server -->
 </body>
-</html> 
+
+</html>
