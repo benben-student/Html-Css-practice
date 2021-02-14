@@ -1,0 +1,39 @@
+.a {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 100px auto auto;
+    border: crimson 2px solid;
+}
+
+.b {
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    /* display: none; */
+}
+
+.b:hover {
+    display: block;
+    background-color: chartreuse;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 300px;
+}
+
+.c {
+    width: 200px;
+    height: 200px;
+    background-color: darkblue;
+    position: relative;
+    top: 200px;
+}
+
+.c:hover {
+    width: 500px;
+    height: 500px;
+    background-color: darkcyan;
+    position: relative;
+    left: 300px;
+}
